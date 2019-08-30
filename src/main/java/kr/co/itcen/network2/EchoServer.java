@@ -1,4 +1,4 @@
-package echo;
+package kr.co.itcen.network2;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +11,7 @@ import java.net.SocketException;
 
 public class EchoServer {
 
-	private static final int PORT = 6000;
+	private static final int PORT = 8000;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	    
 

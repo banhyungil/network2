@@ -1,4 +1,4 @@
-package echo;
+package kr.co.itcen.network2;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class EchoClient {
 
-	private static String SERVER_IP = "192.168.1.6";
-	private static int SERVER_PORT = 6000;
+	private static String SERVER_IP = "192.168.1.76";
+	private static int SERVER_PORT = 8000;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
