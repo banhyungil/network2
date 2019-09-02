@@ -1,4 +1,4 @@
-package kr.co.itcen.network2;
+package kr.co.itcen.echo;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,7 +36,9 @@ public class EchoClient {
 				System.out.print(">>");
 				data = sc.next();
 				
-				if(!"exit".equals(data))
+				System.out.println(data);
+				
+				if("exit".equals(data))
 					return;
 				
 				os.write(data.getBytes("UTF-8"));
@@ -44,6 +46,7 @@ public class EchoClient {
 				//5. 데이터 읽기
 				byte[] buffer = new byte[256];
 				int readByteCount = is.read(buffer);	//읽을게 없으면 blocking
+				
 				
 				if(readByteCount == -1) {				//client가 연결을 끊은 경우
 					// 정상종료 : remote socket이 close()
